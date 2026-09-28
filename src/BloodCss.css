@@ -1,0 +1,108 @@
+.blood-effect {
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 100vw;
+    height: 45vh;
+
+    z-index: 1000;
+
+    pointer-events: none;
+
+    overflow: visible;
+}
+
+
+.blood {
+    fill: url(#bloodGradient);
+
+    filter:
+            url(#bloodTexture)
+            url(#bloodShadow);
+
+    transform-origin: top;
+
+    animation: bloodDrop 1.8s ease-out forwards;
+}
+
+.blood-effect {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100vw;
+    height: 45vh;
+
+    z-index: 1000;
+
+    pointer-events: none;
+
+    overflow: visible;
+}
+
+
+
+.blood {
+    fill: url(#bloodGradient);
+
+    filter: url(#bloodShadow);
+
+    transform-origin: top;
+
+    animation: bloodDrop 1.8s ease-out forwards;
+}
+
+
+
+.blood-highlight {
+    fill: none;
+
+    stroke: rgba(255, 100, 100, 0.25);
+
+    stroke-width: 4;
+
+    stroke-linecap: round;
+
+    filter: blur(2px);
+
+    opacity: 0;
+
+    animation: bloodShine 1.8s ease-out forwards;
+}
+
+
+
+@keyframes bloodDrop {
+
+    0% {
+        transform: scaleY(0);
+    }
+
+    100% {
+        transform: scaleY(1);
+    }
+
+}
+
+
+@keyframes bloodShine {
+
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    70% {
+        opacity: 0.35;
+    }
+
+    100% {
+        opacity: 0.2;
+    }
+
+}

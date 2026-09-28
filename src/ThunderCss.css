@@ -1,0 +1,122 @@
+.lightning-effect {
+    position: fixed;
+    inset: 0;
+
+    width: 100vw;
+    height: 100vh;
+
+    z-index: 9999;
+    pointer-events: none;
+    overflow: hidden;
+
+    background: rgba(0, 0, 0, 0);
+
+    animation: darkStorm 1.6s ease-out forwards;
+}
+
+
+.lightning-image {
+    position: absolute;
+
+    top: 0;
+    left: 3vw;
+
+    width: 90vw;
+    height: auto;
+
+    opacity: 0;
+
+    transform-origin: top center;
+
+    filter:
+            brightness(1.2)
+            contrast(1.4)
+            drop-shadow(0 0 5px #ffffff)
+            drop-shadow(0 0 18px #8b5cff);
+
+    animation: lightningAppear 1.6s ease-out forwards;
+}
+
+
+@keyframes darkStorm {
+
+    0% {
+        background: rgba(0, 0, 0, 0);
+    }
+
+    20% {
+        background: rgba(0, 0, 0, .65);
+    }
+
+    65% {
+        background: rgba(0, 0, 0, .45);
+    }
+
+    100% {
+        background: rgba(0, 0, 0, 0);
+    }
+}
+
+
+
+
+@keyframes lightningAppear {
+
+    0% {
+        opacity: 0;
+
+        transform:
+                scale(.9)
+                translateY(-40px);
+    }
+
+    10% {
+        opacity: 1;
+    }
+
+    14% {
+        opacity: .15;
+    }
+
+    18% {
+        opacity: 1;
+    }
+
+    22% {
+        opacity: .25;
+    }
+
+    28% {
+        opacity: 1;
+
+        transform:
+                scale(1)
+                translateX(-5px);
+    }
+
+    31% {
+        opacity: .2;
+    }
+
+    35% {
+        opacity: 1;
+
+        transform:
+                scale(1)
+                translateX(5px);
+    }
+
+    40% {
+        transform:
+                scale(1)
+                translateX(0);
+    }
+
+    70% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
