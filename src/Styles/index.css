@@ -28,7 +28,7 @@ main {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background-image: url("./image/backGround.png");
+    background-image: url("../image/backGround.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -58,7 +58,7 @@ main {
 }
 
 .x {
-    background-image: url("./image/x.png");
+    background-image: url("../image/x.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -67,7 +67,7 @@ main {
 }
 
 .o {
-    background-image: url("./image/o.png");
+    background-image: url("../image/o.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;

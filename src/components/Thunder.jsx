@@ -1,4 +1,4 @@
-import "../ThunderCss.css";
+import "../Styles/ThunderCss.css";
 import lightning from "../image/lightning.svg";
 
 export function Thunder() {

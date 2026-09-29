@@ -1,7 +1,7 @@
 import {useState} from 'react';
 import {Cell} from "./Cell.jsx";
 import {checkWinner} from "../winController.jsx";
-import '../index.css'
+import '../Styles/index.css'
 import {Blood} from "./Blood.jsx";
 import {Thunder} from "./Thunder.jsx";
 import {Line} from "./Line.jsx";
@@ -53,7 +53,7 @@ function App() {
                 if (w.winner === 'x') {
                     setXWin(xWin + 1)
                 }
-                if(winner==='d') setOWin(oWin + 1);
+                if(winner==='o') setOWin(oWin + 1);
             } else {
                 setTurn(turn === 'x' ? 'o' : 'x');
             }

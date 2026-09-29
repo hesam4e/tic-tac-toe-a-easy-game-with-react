@@ -1,4 +1,4 @@
-import "../BloodCss.css";
+import "../Styles/BloodCss.css";
 
 export function Blood() {
     return (
